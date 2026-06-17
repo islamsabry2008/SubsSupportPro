@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="utf-8"?>
+<subssupportskins>
+
+  <!-- Example: TMDBScraperProScreen (use a unique id) -->
+    <skin id="TMDBScraperProScreen_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" title="TMDB Scraper" zPosition="10" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="30,108" size="1660,2" backgroundColor="#6854a8" zPosition="-3" />
+  <widget name="error_message" position="50,140" size="1620,720" font="Regular;28" foregroundColor="#ff6b8b" halign="center" valign="center" backgroundColor="#061425" zPosition="1" CornerRadius="12" />
+  <widget source="list" render="Listbox" position="50,140" size="1620,720" transparent="1" scrollbarMode="showAlways" scrollbarWidth="10" itemHeight="120" itemCornerRadius="12" itemCornerRadiusSelected="12" backgroundColorSelected="#2c525b" backgroundColor="#061425">
+    <convert type="TemplatedMultiContent">
+            {"templates":
+                {"default": (118, [
+                    MultiContentEntryPixmapAlphaBlend(pos = (10, 8), size = (76, 102), png = 0, flags=BT_SCALE),
+                    MultiContentEntryText(pos = (100, 10), size = (1600, 34), font = 0, flags = RT_HALIGN_LEFT, text = 1, color=0x00EAF3FF),
+                    MultiContentEntryText(pos = (100, 48), size = (1600, 28), font = 1, flags = RT_HALIGN_LEFT, text = 2, color=0x0059D8FF),
+                    MultiContentEntryText(pos = (100, 78), size = (1600, 28), font = 2, flags = RT_HALIGN_LEFT|RT_WRAP, text = 3, color=0x00D1DCEB),
+                ], True, "showOnDemand"),
+                },
+            "fonts": [gFont("Regular", 25), gFont("Regular", 21), gFont("Regular", 18)],
+            "itemHeight": 120
+            }
+        </convert>
+  </widget>
+  <eLabel position="30,885" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <widget name="key_red" position="104,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <widget name="key_green" position="424,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <widget name="key_yellow" position="744,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#c2941a" />
+  <widget name="key_blue" position="1064,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+  <eLabel name="" position="50,898" size="50,50" cornerRadius="25" backgroundColor="#a93247" />
+  <eLabel name="" position="370,898" size="50,50" cornerRadius="25" backgroundColor="#1aa96b" />
+  <eLabel name="" position="690,898" size="50,50" cornerRadius="25" backgroundColor="#c2941a" />
+  <eLabel name="" position="1010,898" size="50,50" cornerRadius="25" backgroundColor="#1f58d6" />
+  <eLabel name="" position="50,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="370,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="690,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="1010,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="45,135" size="1630,730" zPosition="-1" backgroundColor="#061425" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular; 34" valign="center" halign="left" />
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="TMDBScraperProScreen_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" title="TMDB Scraper" zPosition="10" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="22,79" size="1235,1" backgroundColor="#6854a8" zPosition="-3" />
+  <widget name="error_message" position="37,103" size="1206,529" font="Regular;21" foregroundColor="#ff6b8b" halign="center" valign="center" backgroundColor="#061425" zPosition="1" CornerRadius="12" />
+  <widget source="list" render="Listbox" position="37,103" size="1206,529" transparent="1" scrollbarMode="showAlways" scrollbarWidth="7" itemHeight="88" itemCornerRadius="9" itemCornerRadiusSelected="9" backgroundColorSelected="#2c525b" backgroundColor="#061425">
+    <convert type="TemplatedMultiContent">
+            {"templates":
+                {"default": (87, [
+                    MultiContentEntryPixmapAlphaBlend(pos = (7, 6), size = (57, 75), png = 0, flags=BT_SCALE),
+                    MultiContentEntryText(pos = (74, 7), size = (1191, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1, color=0x00EAF3FF),
+                    MultiContentEntryText(pos = (74, 35), size = (1191, 21), font = 1, flags = RT_HALIGN_LEFT, text = 2, color=0x0059D8FF),
+                    MultiContentEntryText(pos = (74, 57), size = (1191, 21), font = 2, flags = RT_HALIGN_LEFT|RT_WRAP, text = 3, color=0x00D1DCEB),
+                ], True, "showOnDemand"),
+                },
+            "fonts": [gFont("Regular", 18), gFont("Regular", 15), gFont("Regular", 13)],
+            "itemHeight": 88
+            }
+        </convert>
+  </widget>
+  <eLabel position="22,650" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <widget name="key_red" position="77,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <widget name="key_green" position="316,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <widget name="key_yellow" position="554,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#c2941a" />
+  <widget name="key_blue" position="792,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+  <eLabel name="" position="37,660" size="37,37" cornerRadius="18" backgroundColor="#a93247" />
+  <eLabel name="" position="275,660" size="37,37" cornerRadius="18" backgroundColor="#1aa96b" />
+  <eLabel name="" position="513,660" size="37,37" cornerRadius="18" backgroundColor="#c2941a" />
+  <eLabel name="" position="752,660" size="37,37" cornerRadius="18" backgroundColor="#1f58d6" />
+  <eLabel name="" position="37,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="275,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="513,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="752,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="33,99" size="1213,536" zPosition="-1" backgroundColor="#061425" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular; 25" valign="center" halign="left" />
+</screen>
+    
+]]>
+  </skin>
+
+    <skin id="SubsProMenu_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" title="Subtitles Menu" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="14" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="30,108" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;34" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="title_label" position="50,135" size="1620,45" valign="center" halign="center" font="Regular;30" transparent="1" foregroundColor="#eaf3ff" />
+  <widget name="subfile_label" position="50,190" size="1620,55" valign="center" halign="center" font="Regular;26" transparent="1" foregroundColor="#59d8ff" />
+  <widget name="subfile_list" position="710,255" size="300,40" transparent="1" scrollbarMode="showNever" />
+  <eLabel position="50,315" size="1620,2" backgroundColor="#14314e" />
+  <widget name="menu_list" position="50,335" size="1620,500" transparent="1" scrollbarMode="showAlways" itemHeight="50" itemCornerRadius="12" itemCornerRadiusSelected="12" backgroundColorSelected="#2c525b" backgroundColor="#061425" />
+  <eLabel position="50,860" size="1620,2" backgroundColor="#5d37d9" />
+  <widget name="copyright" position="50,880" size="1620,40" valign="center" halign="center" font="Regular;24" transparent="1" foregroundColor="#d6e4f7" />
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="SubsProMenu_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" title="Subtitles Menu" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="10" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="22,79" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;25" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="title_label" position="37,99" size="1206,33" valign="center" halign="center" font="Regular;22" transparent="1" foregroundColor="#eaf3ff" />
+  <widget name="subfile_label" position="37,140" size="1206,40" valign="center" halign="center" font="Regular;19" transparent="1" foregroundColor="#59d8ff" />
+  <widget name="subfile_list" position="528,187" size="223,29" transparent="1" />
+  <eLabel position="37,231" size="1206,1" backgroundColor="#14314e" />
+  <widget name="menu_list" position="37,246" size="1206,345" transparent="1" scrollbarMode="showAlways" itemHeight="37" itemCornerRadius="9" itemCornerRadiusSelected="9" backgroundColorSelected="#2c525b" backgroundColor="#061425" />
+  <eLabel position="37,610" size="1206,1" backgroundColor="#5d37d9" />
+  <widget name="copyright" position="37,624" size="1206,29" valign="center" halign="center" font="Regular;18" transparent="1" foregroundColor="#d6e4f7" />
+</screen>
+    
+]]>
+  </skin>
+
+    <skin id="MovieDetailsProScreen_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" title="Movie Details" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="14" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="30,108" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;34" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="poster" position="70,200" size="360,540" zPosition="2" scale="1" cornerRadius="18" />
+  <widget name="logo" position="160,130" size="180,54" zPosition="2" scale="1" />
+  <widget name="title" position="470,145" size="1120,50" font="Regular;36" halign="left" foregroundColor="#eaf3ff" backgroundColor="#0a1b2d" />
+  <widget name="tagline" position="470,205" size="1120,42" font="Regular;28" halign="left" foregroundColor="#59d8ff" backgroundColor="#0a1b2d" />
+  <widget name="rating" position="470,270" size="360,42" font="Regular;28" halign="left" foregroundColor="#ffd55d" backgroundColor="#0a1b2d" />
+  <widget name="runtime" position="840,270" size="360,42" font="Regular;28" halign="left" foregroundColor="#d6e4f7" backgroundColor="#0a1b2d" />
+  <widget name="adult" position="1210,270" size="360,42" font="Regular;28" halign="left" foregroundColor="#ff6b8b" backgroundColor="#0a1b2d" />
+  <widget name="genres" position="470,330" size="1120,42" font="Regular;28" halign="left" foregroundColor="#66f06f" backgroundColor="#0a1b2d" />
+  <widget name="overview" position="470,400" size="1120,170" font="Regular;26" halign="left" valign="top" foregroundColor="#eaf3ff" backgroundColor="#0a1b2d" />
+  <widget name="cast1" position="500,610" size="120,120" zPosition="2" cornerRadius="14" scale="1" />
+  <widget name="cast1_name" position="470,735" size="180,80" font="Regular;22" halign="center" foregroundColor="#d6e4f7" backgroundColor="#0a1b2d" />
+  <widget name="cast2" position="720,610" size="120,120" zPosition="2" cornerRadius="14" scale="1" />
+  <widget name="cast2_name" position="690,735" size="180,80" font="Regular;22" halign="center" foregroundColor="#d6e4f7" backgroundColor="#0a1b2d" />
+  <widget name="cast3" position="940,610" size="120,120" zPosition="2" cornerRadius="14" scale="1" />
+  <widget name="cast3_name" position="910,735" size="180,80" font="Regular;22" halign="center" foregroundColor="#d6e4f7" backgroundColor="#0a1b2d" />
+  <widget name="cast4" position="1160,610" size="120,120" zPosition="2" cornerRadius="14" scale="1" />
+  <widget name="cast4_name" position="1130,735" size="180,80" font="Regular;22" halign="center" foregroundColor="#d6e4f7" backgroundColor="#0a1b2d" />
+  <eLabel position="30,885" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="50,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="50,898" size="50,50" cornerRadius="25" backgroundColor="#a93247" zPosition="1" />
+  <widget source="key_red" render="Label" position="104,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="MovieDetailsProScreen_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" title="Movie Details" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="10" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="22,79" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;25" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="poster" position="52,147" size="268,397" zPosition="2" scale="1" cornerRadius="13" />
+  <widget name="logo" position="119,96" size="134,40" zPosition="2" scale="1" />
+  <widget name="title" position="350,107" size="833,37" font="Regular;26" halign="left" foregroundColor="#eaf3ff" backgroundColor="#0a1b2d" />
+  <widget name="tagline" position="350,151" size="833,31" font="Regular;21" halign="left" foregroundColor="#59d8ff" backgroundColor="#0a1b2d" />
+  <widget name="rating" position="350,198" size="268,31" font="Regular;21" halign="left" foregroundColor="#ffd55d" backgroundColor="#0a1b2d" />
+  <widget name="runtime" position="625,198" size="268,31" font="Regular;21" halign="left" foregroundColor="#d6e4f7" backgroundColor="#0a1b2d" />
+  <widget name="adult" position="900,198" size="268,31" font="Regular;21" halign="left" foregroundColor="#ff6b8b" backgroundColor="#0a1b2d" />
+  <widget name="genres" position="350,242" size="833,31" font="Regular;21" halign="left" foregroundColor="#66f06f" backgroundColor="#0a1b2d" />
+  <widget name="overview" position="350,294" size="833,125" font="Regular;19" halign="left" valign="top" foregroundColor="#eaf3ff" backgroundColor="#0a1b2d" />
+  <widget name="cast1" position="372,448" size="89,88" zPosition="2" cornerRadius="10" scale="1" />
+  <widget name="cast1_name" position="350,540" size="134,59" font="Regular;16" halign="center" foregroundColor="#d6e4f7" backgroundColor="#0a1b2d" />
+  <widget name="cast2" position="536,448" size="89,88" zPosition="2" cornerRadius="10" scale="1" />
+  <widget name="cast2_name" position="513,540" size="134,59" font="Regular;16" halign="center" foregroundColor="#d6e4f7" backgroundColor="#0a1b2d" />
+  <widget name="cast3" position="700,448" size="89,88" zPosition="2" cornerRadius="10" scale="1" />
+  <widget name="cast3_name" position="677,540" size="134,59" font="Regular;16" halign="center" foregroundColor="#d6e4f7" backgroundColor="#0a1b2d" />
+  <widget name="cast4" position="863,448" size="89,88" zPosition="2" cornerRadius="10" scale="1" />
+  <widget name="cast4_name" position="841,540" size="134,59" font="Regular;16" halign="center" foregroundColor="#d6e4f7" backgroundColor="#0a1b2d" />
+  <eLabel position="22,650" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="37,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="37,660" size="37,37" cornerRadius="18" backgroundColor="#a93247" zPosition="1" />
+  <widget source="key_red" render="Label" position="77,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+</screen>
+    
+]]>
+  </skin>
+
+    <skin id="SubsProChooser_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" title="Choose Subtitle" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="14" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel name="" position="45,135" size="1630,780" zPosition="-1" backgroundColor="#061425" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="30,108" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;34" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="file_list" position="50,140" size="1620,550" scrollbarMode="showAlways" scrollbarWidth="10" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="12" itemCornerRadiusSelected="12" itemHeight="50" />
+  <eLabel position="50,735" size="1620,2" backgroundColor="#5d37d9" />
+  <widget name="menu_list" position="50,755" size="1620,150" scrollbarMode="showNever" itemHeight="50" itemCornerRadius="12" itemCornerRadiusSelected="12" backgroundColorSelected="#2c525b" backgroundColor="#061425" />
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="SubsProChooser_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" title="Choose Subtitle" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="10" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel name="" position="33,99" size="1213,573" zPosition="-1" backgroundColor="#061425" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="22,79" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;25" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="file_list" position="37,103" size="1206,404" scrollbarMode="showAlways" scrollbarWidth="7" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="9" itemCornerRadiusSelected="9" itemHeight="37" />
+  <eLabel position="37,540" size="1206,1" backgroundColor="#5d37d9" />
+  <widget name="menu_list" position="37,555" size="1206,110" scrollbarMode="showNever" itemHeight="37" itemCornerRadius="9" itemCornerRadiusSelected="9" backgroundColorSelected="#2c525b" backgroundColor="#061425" />
+</screen>
+    
+]]>
+  </skin>
+
+    <skin id="InfoProScreen_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" title="Info" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="14" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="30,108" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;34" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget source="path" render="Label" position="70,170" size="1580,650" valign="center" halign="center" font="Regular;32" foregroundColor="#eaf3ff" backgroundColor="#061425" />
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="InfoProScreen_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" title="Info" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="10" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="22,79" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;25" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget source="path" render="Label" position="52,125" size="1176,478" valign="center" halign="center" font="Regular;24" foregroundColor="#eaf3ff" backgroundColor="#061425" />
+</screen>
+    
+]]>
+  </skin>
+
+
+    <skin id="SubsProDownloadedSelection_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" title="Downloaded Subtitles" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="14" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="30,108" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;34" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget source="header_name" render="Label" position="110,145" size="800,50" font="Regular;28" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_provider" render="Label" position="950,145" size="280,50" font="Regular;28" halign="left" valign="center" foregroundColor="#59d8ff" backgroundColor="#061425" />
+  <widget source="header_date" render="Label" position="1280,145" size="360,50" font="Regular;28" halign="left" valign="center" foregroundColor="#66f06f" backgroundColor="#061425" />
+  <eLabel position="50,205" size="1620,2" backgroundColor="#14314e" />
+  <eLabel name="" position="45,135" size="1630,750" zPosition="-1" backgroundColor="#061425" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <widget source="subtitles" render="Listbox" scrollbarMode="showAlways" position="50,225" size="1620,550" zPosition="3" transparent="1" scrollbarWidth="10" itemHeight="50" itemCornerRadius="12" itemCornerRadiusSelected="12" backgroundColorSelected="#2c525b" backgroundColor="#061425">
+    <convert type="TemplatedMultiContent">
+      {"templates": {"default": (50, [
+        MultiContentEntryPixmapAlphaBlend(pos = (10,5), size = (80,40), png=0, flags=BT_SCALE),
+        MultiContentEntryText(pos = (110,0), size = (738,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1, color=0x00EAF3FF),
+        MultiContentEntryText(pos = (900,0), size = (280,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=2, color=0x0059D8FF),
+        MultiContentEntryText(pos = (1230,0), size = (360,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=3, color=0x0066F06F)
+      ], True, "showOnDemand")}, "fonts": [gFont("Regular", 26)], "itemHeight":50}
+    </convert>
+  </widget>
+  <eLabel position="50,805" size="1620,2" backgroundColor="#5d37d9" />
+  <widget source="entries_sum" render="Label" position="70,825" size="700,45" font="Regular;28" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <eLabel name="" position="50,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="50,898" size="50,50" cornerRadius="25" backgroundColor="#a93247" zPosition="1" />
+  <widget source="key_red" render="Label" position="104,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <eLabel name="" position="370,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="370,898" size="50,50" cornerRadius="25" backgroundColor="#1f58d6" zPosition="1" />
+  <widget source="key_blue" render="Label" position="424,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="SubsProDownloadedSelection_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" title="Downloaded Subtitles" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="10" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="22,79" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;25" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget source="header_name" render="Label" position="82,107" size="595,37" font="Regular;21" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_provider" render="Label" position="707,107" size="208,37" font="Regular;21" halign="left" valign="center" foregroundColor="#59d8ff" backgroundColor="#061425" />
+  <widget source="header_date" render="Label" position="953,107" size="268,37" font="Regular;21" halign="left" valign="center" foregroundColor="#66f06f" backgroundColor="#061425" />
+  <eLabel position="37,151" size="1206,1" backgroundColor="#14314e" />
+  <eLabel name="" position="33,99" size="1213,551" zPosition="-1" backgroundColor="#061425" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <widget source="subtitles" render="Listbox" scrollbarMode="showAlways" position="37,165" size="1206,404" zPosition="3" transparent="1" scrollbarWidth="7" itemHeight="37" itemCornerRadius="9" itemCornerRadiusSelected="9" backgroundColorSelected="#2c525b" backgroundColor="#061425">
+    <convert type="TemplatedMultiContent">
+      {"templates": {"default": (37, [
+        MultiContentEntryPixmapAlphaBlend(pos = (7, 4), size = (60, 30), png=0, flags=BT_SCALE),
+        MultiContentEntryText(pos = (78, 0), size = (553, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1, color=0x00EAF3FF),
+        MultiContentEntryText(pos = (670, 0), size = (208, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=2, color=0x0059D8FF),
+        MultiContentEntryText(pos = (915, 0), size = (268, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=3, color=0x0066F06F)
+      ], True, "showOnDemand")}, "fonts": [gFont("Regular", 19)], "itemHeight":37}
+    </convert>
+  </widget>
+  <eLabel position="37,591" size="1206,1" backgroundColor="#5d37d9" />
+  <widget source="entries_sum" render="Label" position="52,606" size="521,33" font="Regular;21" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <eLabel name="" position="37,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="37,660" size="37,37" cornerRadius="18" backgroundColor="#a93247" zPosition="1" />
+  <widget source="key_red" render="Label" position="77,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <eLabel name="" position="275,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="275,660" size="37,37" cornerRadius="18" backgroundColor="#1f58d6" zPosition="1" />
+  <widget source="key_blue" render="Label" position="316,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+</screen>
+    
+]]>
+  </skin>
+
+    <skin id="SubsProEmbeddedSelection_fhd">
+    <![CDATA[
+<screen name="SubsProEmbeddedSelection" position="center,center" size="1720,980" title="Embedded Subtitles" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="14" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="30,108" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;34" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget source="streams" render="Listbox" scrollbarMode="showAlways" position="50,140" size="1620,720" zPosition="3" transparent="1" scrollbarWidth="10" itemHeight="50" itemCornerRadius="12" itemCornerRadiusSelected="12" backgroundColorSelected="#2c525b" backgroundColor="#061425">
+    <convert type="TemplatedMultiContent">
+      {"templates": {"default": (50, [
+        MultiContentEntryText(pos=(18,0), size=(90,50), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=1, color=0x0059D8FF),
+        MultiContentEntryText(pos=(125,0), size=(140,50), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=2, color=0x00EAF3FF),
+        MultiContentEntryText(pos=(290,0), size=(560,50), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=3, color=0x00D6E4F7),
+        MultiContentEntryText(pos=(880,0), size=(680,50), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4, color=0x0066F06F)
+      ], True, "showOnDemand")}, "fonts": [gFont("Regular", 28)], "itemHeight":50}
+    </convert>
+  </widget>
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="SubsProEmbeddedSelection_hd">
+    <![CDATA[
+<screen name="SubsProEmbeddedSelection" position="center,center" size="1280,720" title="Embedded Subtitles" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="10" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="22,79" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;25" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget source="streams" render="Listbox" scrollbarMode="showAlways" position="37,103" size="1206,529" zPosition="3" transparent="1" scrollbarWidth="7" itemHeight="37" itemCornerRadius="9" itemCornerRadiusSelected="9" backgroundColorSelected="#2c525b" backgroundColor="#061425">
+    <convert type="TemplatedMultiContent">
+      {"templates": {"default": (37, [
+        MultiContentEntryText(pos=(13, 0), size=(67, 37), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=1, color=0x0059D8FF),
+        MultiContentEntryText(pos=(93, 0), size=(104, 37), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=2, color=0x00EAF3FF),
+        MultiContentEntryText(pos=(216, 0), size=(417, 37), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=3, color=0x00D6E4F7),
+        MultiContentEntryText(pos=(655, 0), size=(506, 37), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4, color=0x0066F06F)
+      ], True, "showOnDemand")}, "fonts": [gFont("Regular", 21)], "itemHeight":37}
+    </convert>
+  </widget>
+</screen>
+    
+]]>
+  </skin>
+
+    <skin id="SubsProSearchDownloadOptions_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" title="Download Options" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="14" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="30,108" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;34" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="config" position="50,140" size="1620,180" font="Regular;28" itemHeight="50" scrollbarMode="showAlways" scrollbarWidth="10" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="12" itemCornerRadiusSelected="12" />
+  <eLabel position="50,350" size="1620,120" backgroundColor="#a93247" cornerRadius="16" />
+  <widget source="fname" render="Label" position="70,360" size="1580,100" valign="center" halign="center" font="Regular;28" foregroundColor="#ffffff" backgroundColor="transparent" zPosition="1" />
+  <eLabel position="50,500" size="1620,120" backgroundColor="#1aa96b" cornerRadius="16" />
+  <widget source="dpath" render="Label" position="70,510" size="1580,100" valign="center" halign="center" font="Regular;28" foregroundColor="#ffffff" backgroundColor="transparent" zPosition="1" />
+  <eLabel position="30,885" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="50,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="50,898" size="50,50" cornerRadius="25" backgroundColor="#a93247" zPosition="1" />
+  <widget source="key_red" render="Label" position="104,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <eLabel name="" position="370,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="370,898" size="50,50" cornerRadius="25" backgroundColor="#1aa96b" zPosition="1" />
+  <widget source="key_green" render="Label" position="424,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <eLabel name="" position="690,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="690,898" size="50,50" cornerRadius="25" backgroundColor="#1f58d6" zPosition="1" />
+  <widget source="key_blue" render="Label" position="744,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="SubsProSearchDownloadOptions_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" title="Download Options" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="10" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="22,79" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;25" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="config" position="37,103" size="1206,132" font="Regular;21" itemHeight="37" scrollbarMode="showAlways" scrollbarWidth="7" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="9" itemCornerRadiusSelected="9" />
+  <eLabel position="37,257" size="1206,88" backgroundColor="#a93247" cornerRadius="12" />
+  <widget source="fname" render="Label" position="52,264" size="1176,73" valign="center" halign="center" font="Regular;21" foregroundColor="#ffffff" backgroundColor="transparent" zPosition="1" />
+  <eLabel position="37,367" size="1206,88" backgroundColor="#1aa96b" cornerRadius="12" />
+  <widget source="dpath" render="Label" position="52,375" size="1176,73" valign="center" halign="center" font="Regular;21" foregroundColor="#ffffff" backgroundColor="transparent" zPosition="1" />
+  <eLabel position="22,650" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="37,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="37,660" size="37,37" cornerRadius="18" backgroundColor="#a93247" zPosition="1" />
+  <widget source="key_red" render="Label" position="77,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <eLabel name="" position="275,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="275,660" size="37,37" cornerRadius="18" backgroundColor="#1aa96b" zPosition="1" />
+  <widget source="key_green" render="Label" position="316,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <eLabel name="" position="513,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="513,660" size="37,37" cornerRadius="18" backgroundColor="#1f58d6" zPosition="1" />
+  <widget source="key_blue" render="Label" position="554,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+</screen>
+    
+]]>
+  </skin>
+
+    <skin id="SubsProSearchContextMenu_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" title="Subtitle Actions" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="14" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="30,108" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;34" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget source="subtitle_release" render="Label" position="50,140" size="1620,70" valign="center" halign="center" font="Regular;30" foregroundColor="#59d8ff" backgroundColor="#061425" />
+  <eLabel position="50,230" size="1620,2" backgroundColor="#14314e" />
+  <widget source="context_menu" render="Listbox" position="50,250" size="1620,560" scrollbarMode="showAlways" zPosition="1" itemHeight="50" itemCornerRadius="12" itemCornerRadiusSelected="12" backgroundColorSelected="#2c525b" backgroundColor="#061425">
+    <convert type="TemplatedMultiContent">
+      {"templates": {"default": (50, [MultiContentEntryText(pos=(18,0), size=(1560,50), font=0, color=0x00EAF3FF, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0)], True, "showOnDemand")}, "fonts": [gFont("Regular", 28)], "itemHeight":50}
+    </convert>
+  </widget>
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="SubsProSearchContextMenu_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" title="Subtitle Actions" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="10" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="22,79" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;25" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget source="subtitle_release" render="Label" position="37,103" size="1206,51" valign="center" halign="center" font="Regular;22" foregroundColor="#59d8ff" backgroundColor="#061425" />
+  <eLabel position="37,169" size="1206,1" backgroundColor="#14314e" />
+  <widget source="context_menu" render="Listbox" position="37,184" size="1206,411" scrollbarMode="showAlways" zPosition="1" itemHeight="37" itemCornerRadius="9" itemCornerRadiusSelected="9" backgroundColorSelected="#2c525b" backgroundColor="#061425">
+    <convert type="TemplatedMultiContent">
+      {"templates": {"default": (37, [MultiContentEntryText(pos=(13, 0), size=(1161, 37), font=0, color=0x00EAF3FF, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0)], True, "showOnDemand")}, "fonts": [gFont("Regular", 21)], "itemHeight":37}
+    </convert>
+  </widget>
+</screen>
+    
+]]>
+  </skin>
+
+    <skin id="SubsSupportProLogScreen_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" title="SubsSupportPro Log" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="14" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="30,108" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;34" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="logtext" position="50,140" size="1620,720" font="Regular;26" foregroundColor="#eaf3ff" backgroundColor="#061425" />
+  <eLabel position="30,885" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="50,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="50,898" size="50,50" cornerRadius="25" backgroundColor="#a93247" zPosition="1" />
+  <widget source="key_red" render="Label" position="104,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="SubsSupportProLogScreen_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" title="SubsSupportPro Log" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="10" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="22,79" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;25" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="logtext" position="37,103" size="1206,529" font="Regular;19" foregroundColor="#eaf3ff" backgroundColor="#061425" />
+  <eLabel position="22,650" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="37,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="0" />
+  <eLabel name="" position="37,660" size="37,37" cornerRadius="18" backgroundColor="#a93247" zPosition="1" />
+  <widget source="key_red" render="Label" position="77,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+</screen>
+    
+]]>
+  </skin>
+
+    <skin id="SubsProSearch_fhd">
+    <![CDATA[
+<screen name="SubsProSearch" position="center,center" size="1720,980" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="14" />
+  <eLabel position="35,22" size="1650,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <widget source="search_info" render="Listbox" position="50,40" size="1360,300" zPosition="3" scrollbarMode="showNever" transparent="1" backgroundColor="#061425" itemHeight="50" itemCornerRadius="12" itemCornerRadiusSelected="12" backgroundColorSelected="#45818e">
+    <convert type="TemplatedMultiContent">
+      {"templates": {"default": (50, [
+        MultiContentEntryText(pos = (0,0), size = (330,50), font = 0, color = 0x0059D8FF, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+        MultiContentEntryText(pos = (350,0), size = (980,50), font = 0, color = 0x00EAF3FF, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1)
+      ], False, "showNever")}, "fonts": [gFont("Regular", 28)], "itemHeight":50}
+    </convert>
+  </widget>
+  <eLabel name="" position="45,35" size="1630,850" zPosition="-1" backgroundColor="#061425" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <widget name="poster" position="1446,40" size="200,300" zPosition="2" cornerRadius="20" scale="1" />
+  <widget source="header_country" render="Label" position="65,380" size="210,45" font="Regular;27" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_release" render="Label" position="310,380" size="800,45" font="Regular;27" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_provider" render="Label" position="1210,380" size="280,45" font="Regular;27" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_sync" render="Label" position="1500,380" size="170,45" font="Regular;27" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <eLabel position="50,430" size="1620,2" backgroundColor="#14314e" />
+  <widget name="loadmessage" position="50,440" size="1620,440" valign="center" halign="center" font="Regular;30" foregroundColor="white" zPosition="4" backgroundColor="#061425" />
+  <widget name="errormessage" position="50,440" size="1620,440" valign="center" halign="center" font="Regular;30" foregroundColor="#ff6b8b" zPosition="5" backgroundColor="#061425" />
+  <widget source="subtitles" render="Listbox" scrollbarMode="showAlways" position="50,440" size="1620,440" zPosition="3" transparent="1" scrollbarWidth="10" itemHeight="50" itemCornerRadius="12" itemCornerRadiusSelected="12" backgroundColorSelected="#45818e" backgroundColor="#061425">
+    <convert type="TemplatedMultiContent">
+      {"templates": {"default": (50, [
+        MultiContentEntryPixmapAlphaBlend(pos = (10,5), size = (80,40), png=0, flags=BT_SCALE),
+        MultiContentEntryText(pos = (110,0), size = (135,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, color=0x0059D8FF),
+        MultiContentEntryText(pos = (260,0), size = (880,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2, color=0x00EAF3FF),
+        MultiContentEntryText(pos = (1160,0), size = (260,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3, color=0x00D1DCEB),
+        MultiContentEntryPixmapAlphaBlend(pos = (1460,7), size = (34,34), png=4),
+      ], True, "showOnDemand")}, "fonts": [gFont("Regular", 25)], "itemHeight":50}
+    </convert>
+  </widget>
+  <eLabel position="35,890" size="1650,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="1594,898" size="82,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="1594,898" size="80,50" cornerRadius="25" backgroundColor="#5d37d9" text="MENU" font="Regular; 24" halign="center" valign="center" />
+  <widget source="key_red" render="Label" position="104,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <widget source="key_green" render="Label" position="424,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <widget source="key_yellow" render="Label" position="744,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#c2941a" />
+  <widget source="key_blue" render="Label" position="1064,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+  <eLabel name="" position="50,898" size="50,50" cornerRadius="25" backgroundColor="#a93247" />
+  <eLabel name="" position="370,898" size="50,50" cornerRadius="25" backgroundColor="#1aa96b" />
+  <eLabel name="" position="690,898" size="50,50" cornerRadius="25" backgroundColor="#c2941a" />
+  <eLabel name="" position="1010,898" size="50,50" cornerRadius="25" backgroundColor="#1f58d6" />
+  <eLabel name="" position="50,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="370,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="690,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="1010,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="1500,898" size="80,50" cornerRadius="25" backgroundColor="#5d37d9" text="INFO" font="Regular; 24" halign="center" valign="center" />
+  <eLabel name="" position="1500,898" size="82,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="SubsProSearch_hd">
+    <![CDATA[
+<screen name="SubsProSearch" position="center,center" size="1280,720" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" cornerRadius="10" />
+  <eLabel position="26,16" size="1228,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <widget source="search_info" render="Listbox" position="37,29" size="1012,220" zPosition="3" scrollbarMode="showNever" transparent="1" backgroundColor="#061425" itemHeight="37" itemCornerRadius="9" itemCornerRadiusSelected="9" backgroundColorSelected="#45818e">
+    <convert type="TemplatedMultiContent">
+      {"templates": {"default": (37, [
+        MultiContentEntryText(pos = (0, 0), size = (246, 37), font = 0, color = 0x0059D8FF, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+        MultiContentEntryText(pos = (260, 0), size = (729, 37), font = 0, color = 0x00EAF3FF, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1)
+      ], False, "showNever")}, "fonts": [gFont("Regular", 21)], "itemHeight":37}
+    </convert>
+  </widget>
+  <eLabel name="" position="33,26" size="1213,624" zPosition="-1" backgroundColor="#061425" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <widget name="poster" position="1076,29" size="149,220" zPosition="2" cornerRadius="15" scale="1" />
+  <widget source="header_country" render="Label" position="48,279" size="156,33" font="Regular;20" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_release" render="Label" position="231,279" size="595,33" font="Regular;20" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_provider" render="Label" position="900,279" size="208,33" font="Regular;20" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_sync" render="Label" position="1116,279" size="127,33" font="Regular;20" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <eLabel position="37,316" size="1206,1" backgroundColor="#14314e" />
+  <widget name="loadmessage" position="37,323" size="1206,323" valign="center" halign="center" font="Regular;22" foregroundColor="white" zPosition="4" backgroundColor="#061425" />
+  <widget name="errormessage" position="37,323" size="1206,323" valign="center" halign="center" font="Regular;22" foregroundColor="#ff6b8b" zPosition="5" backgroundColor="#061425" />
+  <widget source="subtitles" render="Listbox" scrollbarMode="showAlways" position="37,323" size="1206,323" zPosition="3" transparent="1" scrollbarWidth="7" itemHeight="37" itemCornerRadius="9" itemCornerRadiusSelected="9" backgroundColorSelected="#45818e" backgroundColor="#061425">
+    <convert type="TemplatedMultiContent">
+      {"templates": {"default": (37, [
+        MultiContentEntryPixmapAlphaBlend(pos = (7, 4), size = (60, 30), png=0, flags=BT_SCALE),
+        MultiContentEntryText(pos = (78, 0), size = (101, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, color=0x0059D8FF),
+        MultiContentEntryText(pos = (193, 0), size = (655, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2, color=0x00EAF3FF),
+        MultiContentEntryText(pos = (863, 0), size = (193, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3, color=0x00D1DCEB),
+        MultiContentEntryPixmapAlphaBlend(pos = (1087, 5), size = (25, 25), png=4),
+      ], True, "showOnDemand")}, "fonts": [gFont("Regular", 18)], "itemHeight":37}
+    </convert>
+  </widget>
+  <eLabel position="26,654" size="1228,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="1186,660" size="61,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="1186,660" size="60,37" cornerRadius="18" backgroundColor="#5d37d9" text="MENU" font="Regular; 18" halign="center" valign="center" />
+  <widget source="key_red" render="Label" position="77,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <widget source="key_green" render="Label" position="316,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <widget source="key_yellow" render="Label" position="554,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#c2941a" />
+  <widget source="key_blue" render="Label" position="792,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+  <eLabel name="" position="37,660" size="37,37" cornerRadius="18" backgroundColor="#a93247" />
+  <eLabel name="" position="275,660" size="37,37" cornerRadius="18" backgroundColor="#1aa96b" />
+  <eLabel name="" position="513,660" size="37,37" cornerRadius="18" backgroundColor="#c2941a" />
+  <eLabel name="" position="752,660" size="37,37" cornerRadius="18" backgroundColor="#1f58d6" />
+  <eLabel name="" position="37,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="275,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="513,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="752,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="1116,660" size="60,37" cornerRadius="18" backgroundColor="#5d37d9" text="INFO" font="Regular; 18" halign="center" valign="center" />
+  <eLabel name="" position="1116,660" size="61,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+</screen>
+    
+]]>
+  </skin>
+
+    <skin id="SubsProSearchSettings_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="20,108" size="1680,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;34" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <eLabel name="" position="45,135" size="1630,730" zPosition="-1" backgroundColor="#061425" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <widget name="config" position="50,140" size="1620,250" font="Regular;28" itemHeight="50" scrollbarMode="showAlways" scrollbarWidth="10" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="12" itemCornerRadiusSelected="12" />
+  <widget source="header_logo" render="Label" position="50,430" size="90,45" font="Regular;27" halign="center" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_name" render="Label" position="160,430" size="200,45" font="Regular;27" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_lang" render="Label" position="400,430" size="960,45" font="Regular;27" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_state" render="Label" position="1550,430" size="120,45" font="Regular;27" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <eLabel position="50,480" size="1620,2" backgroundColor="#14314e" />
+  <widget source="providers" render="Listbox" position="50,500" size="1620,350" zPosition="3" transparent="1" itemHeight="50" scrollbarMode="showAlways" scrollbarWidth="10" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="12" itemCornerRadiusSelected="12">
+    <convert type="TemplatedMultiContent">
+      {"templates": {
+        "default": (50, [
+          MultiContentEntryPixmapAlphaBlend(pos = (20,5), size = (60,40), png = 0, flags = BT_SCALE),
+          MultiContentEntryText(pos = (110,0), size = (200,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, color=0x00EAF3FF),
+          MultiContentEntryText(pos = (350,0), size = (1050,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2, color=0x0059D8FF),
+          MultiContentEntryText(pos = (1500,0), size = (150,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3, color=0x0066F06F),
+          MultiContentEntryText(pos = (1500,0), size = (150,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4, color=0x00FFD55D),
+          MultiContentEntryText(pos = (1500,0), size = (150,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5, color=0x00FF6B8B)
+        ], True, "showOnDemand"),
+        "notselected": (50, [
+          MultiContentEntryPixmapAlphaBlend(pos = (20,5), size = (60,40), png = 0, flags = BT_SCALE),
+          MultiContentEntryText(pos = (110,0), size = (200,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, color=0x00B6C6D8),
+          MultiContentEntryText(pos = (350,0), size = (1050,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2, color=0x0088AABE),
+          MultiContentEntryText(pos = (1500,0), size = (150,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3, color=0x0066F06F),
+          MultiContentEntryText(pos = (1500,0), size = (150,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4, color=0x00FFD55D),
+          MultiContentEntryText(pos = (1500,0), size = (150,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5, color=0x00FF6B8B)
+        ], False, "showOnDemand")
+      }, "fonts": [gFont("Regular", 25)], "itemHeight":50}
+    </convert>
+  </widget>
+  <eLabel position="30,885" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <widget name="key_red" position="104,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <widget name="key_green" position="424,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <widget name="key_yellow" position="744,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#c2941a" />
+  <widget name="key_blue" position="1064,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+  <eLabel name="" position="50,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="370,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="690,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="1010,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="50,898" size="50,50" cornerRadius="25" backgroundColor="#a93247" />
+  <eLabel name="" position="370,898" size="50,50" cornerRadius="25" backgroundColor="#1aa96b" />
+  <eLabel name="" position="690,898" size="50,50" cornerRadius="25" backgroundColor="#c2941a" />
+  <eLabel name="" position="1010,898" size="50,50" cornerRadius="25" backgroundColor="#1f58d6" />
+  <widget name="HelpWindow" position="484,612" size="758,170" alphatest="blend" transparent="1" conditional="HelpWindow" zPosition="99" />
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="SubsProSearchSettings_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="15,79" size="1250,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;25" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <eLabel name="" position="33,99" size="1213,536" zPosition="-1" backgroundColor="#061425" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <widget name="config" position="37,103" size="1206,184" font="Regular;21" itemHeight="37" scrollbarMode="showAlways" scrollbarWidth="7" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="9" itemCornerRadiusSelected="9" />
+  <widget source="header_logo" render="Label" position="37,316" size="67,33" font="Regular;20" halign="center" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_name" render="Label" position="119,316" size="149,33" font="Regular;20" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_lang" render="Label" position="298,316" size="714,33" font="Regular;20" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <widget source="header_state" render="Label" position="1153,316" size="89,33" font="Regular;20" halign="left" valign="center" foregroundColor="#d6e4f7" backgroundColor="#061425" />
+  <eLabel position="37,353" size="1206,1" backgroundColor="#14314e" />
+  <widget source="providers" render="Listbox" position="37,367" size="1206,257" zPosition="3" transparent="1" itemHeight="37" scrollbarMode="showAlways" scrollbarWidth="7" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="9" itemCornerRadiusSelected="9">
+    <convert type="TemplatedMultiContent">
+      {"templates": {
+        "default": (37, [
+          MultiContentEntryPixmapAlphaBlend(pos = (15, 4), size = (45, 29), png = 0, flags = BT_SCALE),
+          MultiContentEntryText(pos = (82, 0), size = (149, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, color=0x00EAF3FF),
+          MultiContentEntryText(pos = (260, 0), size = (781, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2, color=0x0059D8FF),
+          MultiContentEntryText(pos = (1116, 0), size = (112, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3, color=0x0066F06F),
+          MultiContentEntryText(pos = (1116, 0), size = (112, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4, color=0x00FFD55D),
+          MultiContentEntryText(pos = (1116, 0), size = (112, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5, color=0x00FF6B8B)
+        ], True, "showOnDemand"),
+        "notselected": (37, [
+          MultiContentEntryPixmapAlphaBlend(pos = (15, 4), size = (45, 29), png = 0, flags = BT_SCALE),
+          MultiContentEntryText(pos = (82, 0), size = (149, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, color=0x00B6C6D8),
+          MultiContentEntryText(pos = (260, 0), size = (781, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2, color=0x0088AABE),
+          MultiContentEntryText(pos = (1116, 0), size = (112, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3, color=0x0066F06F),
+          MultiContentEntryText(pos = (1116, 0), size = (112, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4, color=0x00FFD55D),
+          MultiContentEntryText(pos = (1116, 0), size = (112, 37), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5, color=0x00FF6B8B)
+        ], False, "showOnDemand")
+      }, "fonts": [gFont("Regular", 18)], "itemHeight":37}
+    </convert>
+  </widget>
+  <eLabel position="22,650" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <widget name="key_red" position="77,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <widget name="key_green" position="316,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <widget name="key_yellow" position="554,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#c2941a" />
+  <widget name="key_blue" position="792,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+  <eLabel name="" position="37,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="275,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="513,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="752,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="37,660" size="37,37" cornerRadius="18" backgroundColor="#a93247" />
+  <eLabel name="" position="275,660" size="37,37" cornerRadius="18" backgroundColor="#1aa96b" />
+  <eLabel name="" position="513,660" size="37,37" cornerRadius="18" backgroundColor="#c2941a" />
+  <eLabel name="" position="752,660" size="37,37" cornerRadius="18" backgroundColor="#1f58d6" />
+  <widget name="HelpWindow" position="484,612" size="758,170" alphatest="blend" transparent="1" conditional="HelpWindow" zPosition="99" />
+</screen>
+    
+]]>
+  </skin>
+
+    <skin id="SubsProSupportSettings_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="30,108" size="1660,2" backgroundColor="#6854a8" zPosition="-3" />
+  <widget source="menuList" render="Listbox" scrollbarMode="showAlways" position="50,140" size="1620,700" zPosition="3" transparent="1" scrollbarWidth="10" itemHeight="50" itemCornerRadius="12" itemCornerRadiusSelected="12" backgroundColorSelected="#2c525b" backgroundColor="#061425">
+    <convert type="TemplatedMultiContent">
+      {"templates": {"default": (50, [
+        MultiContentEntryText(pos=(18,0), size=(1550,50), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0, color=0x00EAF3FF)
+      ], True, "showOnDemand")}, "fonts": [gFont("Regular", 30)], "itemHeight":50}
+    </convert>
+  </widget>
+  <eLabel name="" position="45,135" size="1630,730" zPosition="-1" backgroundColor="#061425" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular; 34" valign="center" halign="left" />
+  <widget name="update_status" position="1030,40" size="620,48" zPosition="6" font="Regular;28" valign="center" halign="right" foregroundColor="#cfe2f3" backgroundColor="#8e5245" />
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="SubsProSupportSettings_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="22,79" size="1235,1" backgroundColor="#6854a8" zPosition="-3" />
+  <widget source="menuList" render="Listbox" scrollbarMode="showAlways" position="37,103" size="1206,514" zPosition="3" transparent="1" scrollbarWidth="7" itemHeight="37" itemCornerRadius="9" itemCornerRadiusSelected="9" backgroundColorSelected="#2c525b" backgroundColor="#061425">
+    <convert type="TemplatedMultiContent">
+      {"templates": {"default": (37, [
+        MultiContentEntryText(pos=(13, 0), size=(1153, 37), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0, color=0x00EAF3FF)
+      ], True, "showOnDemand")}, "fonts": [gFont("Regular", 22)], "itemHeight":37}
+    </convert>
+  </widget>
+  <eLabel name="" position="33,99" size="1213,536" zPosition="-1" backgroundColor="#061425" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular; 25" valign="center" halign="left" />
+  <widget name="update_status" position="760,29" size="480,35" zPosition="6" font="Regular;20" valign="center" halign="right" foregroundColor="#cfe2f3" backgroundColor="#8e5245" />
+</screen>
+    
+]]>
+  </skin>
+
+    <skin id="BaseProMenuScreen_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="20,108" size="1680,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <widget name="config" position="50,140" size="1620,700" font="Regular;28" itemHeight="50" scrollbarMode="showAlways" scrollbarWidth="10" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="12" itemCornerRadiusSelected="12" />
+  
+  <widget name="key_red" position="104,898" size="220,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <widget name="key_green" position="394,898" size="220,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <widget name="key_yellow" position="684,898" size="220,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#c2941a" />
+  <widget name="key_blue" position="974,898" size="220,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+  <widget name="lbl_menu" position="1264,898" size="220,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#5d37d9" />
+  <widget name="lbl_info" position="1554,898" size="160,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#2c525b" />
+  
+  <eLabel name="" position="50,898" size="50,50" cornerRadius="25" backgroundColor="#a93247" />
+  <eLabel name="" position="340,898" size="50,50" cornerRadius="25" backgroundColor="#1aa96b" />
+  <widget name="key_yellow_circle" position="630,898" size="50,50" cornerRadius="25" backgroundColor="#c2941a" />
+  <eLabel name="" position="920,898" size="50,50" cornerRadius="25" backgroundColor="#1f58d6" />
+  <widget name="lbl_menu_circle" position="1210,898" size="50,50" cornerRadius="25" backgroundColor="#5d37d9" />
+  <widget name="lbl_info_circle" position="1500,898" size="50,50" cornerRadius="25" backgroundColor="#2c525b" />
+  
+  <eLabel name="" position="50,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="340,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <widget name="key_yellow_shadow" position="630,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="920,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <widget name="lbl_menu_shadow" position="1210,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <widget name="lbl_info_shadow" position="1500,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  
+  <eLabel position="30,885" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="45,135" size="1630,730" zPosition="-1" backgroundColor="#061425" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular; 34" valign="center" halign="left" />
+  <widget name="HelpWindow" position="480,690" size="758,170" alphatest="blend" transparent="1" conditional="HelpWindow" zPosition="99" />
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="BaseProMenuScreen_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" zPosition="3" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="15,79" size="1250,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <widget name="config" position="37,103" size="1206,514" font="Regular;21" itemHeight="37" scrollbarMode="showAlways" scrollbarWidth="7" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="9" itemCornerRadiusSelected="9" />
+  
+  <widget name="key_red" position="77,660" size="145,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <widget name="key_green" position="285,660" size="145,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <widget name="key_yellow" position="493,660" size="145,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#c2941a" />
+  <widget name="key_blue" position="701,660" size="145,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+  <widget name="lbl_menu" position="909,660" size="145,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#5d37d9" />
+  <widget name="lbl_info" position="1117,660" size="115,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#2c525b" />
+  
+  <eLabel name="" position="37,660" size="37,37" cornerRadius="18" backgroundColor="#a93247" />
+  <eLabel name="" position="245,660" size="37,37" cornerRadius="18" backgroundColor="#1aa96b" />
+  <widget name="key_yellow_circle" position="453,660" size="37,37" cornerRadius="18" backgroundColor="#c2941a" />
+  <eLabel name="" position="661,660" size="37,37" cornerRadius="18" backgroundColor="#1f58d6" />
+  <widget name="lbl_menu_circle" position="869,660" size="37,37" cornerRadius="18" backgroundColor="#5d37d9" />
+  <widget name="lbl_info_circle" position="1077,660" size="37,37" cornerRadius="18" backgroundColor="#2c525b" />
+  
+  <eLabel name="" position="37,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="245,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <widget name="key_yellow_shadow" position="453,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="661,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <widget name="lbl_menu_shadow" position="869,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <widget name="lbl_info_shadow" position="1077,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  
+  <eLabel position="22,650" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="33,99" size="1213,536" zPosition="-1" backgroundColor="#061425" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular; 25" valign="center" halign="left" />
+  <widget name="HelpWindow" position="357,507" size="564,125" alphatest="blend" transparent="1" conditional="HelpWindow" zPosition="99" />
+</screen>
+    ]]>
+  </skin>
+
+
+    <skin id="SubsProFolderSelect_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" title="Select Folder" zPosition="20" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="30,108" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;34" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="title" position="50,130" size="1620,45" valign="center" halign="center" font="Regular;30" transparent="1" foregroundColor="#eaf3ff" />
+  <widget name="current_path" position="50,180" size="1620,45" valign="center" halign="left" font="Regular;26" transparent="1" foregroundColor="#59d8ff" />
+  <eLabel name="" position="45,235" size="1630,610" zPosition="-1" backgroundColor="#061425" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <widget name="file_list" position="50,240" size="1620,600" scrollbarMode="showAlways" itemHeight="50" font="Regular;28" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="12" itemCornerRadiusSelected="12" />
+  <widget name="help_text" position="50,850" size="1620,35" valign="center" halign="center" font="Regular;22" transparent="1" foregroundColor="#d6e4f7" />
+  <eLabel position="30,885" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <widget name="key_red" position="104,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <widget name="key_green" position="424,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <widget name="key_yellow" position="744,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#c2941a" />
+  <widget name="key_blue" position="1064,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+  <eLabel name="" position="50,898" size="50,50" cornerRadius="25" backgroundColor="#a93247" />
+  <eLabel name="" position="370,898" size="50,50" cornerRadius="25" backgroundColor="#1aa96b" />
+  <eLabel name="" position="690,898" size="50,50" cornerRadius="25" backgroundColor="#c2941a" />
+  <eLabel name="" position="1010,898" size="50,50" cornerRadius="25" backgroundColor="#1f58d6" />
+</screen>
+    ]]>
+  </skin>
+
+    <skin id="SubsProFolderSelect_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" title="Select Folder" zPosition="20" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="22,79" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;25" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="title" position="37,96" size="1206,33" valign="center" halign="center" font="Regular;22" transparent="1" foregroundColor="#eaf3ff" />
+  <widget name="current_path" position="37,132" size="1206,33" valign="center" halign="left" font="Regular;19" transparent="1" foregroundColor="#59d8ff" />
+  <eLabel name="" position="33,175" size="1213,450" zPosition="-1" backgroundColor="#061425" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <widget name="file_list" position="37,180" size="1206,444" scrollbarMode="showAlways" itemHeight="37" font="Regular;21" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="9" itemCornerRadiusSelected="9" />
+  <widget name="help_text" position="37,628" size="1206,24" valign="center" halign="center" font="Regular;16" transparent="1" foregroundColor="#d6e4f7" />
+  <eLabel position="22,650" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <widget name="key_red" position="77,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <widget name="key_green" position="316,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <widget name="key_yellow" position="554,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#c2941a" />
+  <widget name="key_blue" position="792,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1f58d6" />
+  <eLabel name="" position="37,660" size="37,37" cornerRadius="18" backgroundColor="#a93247" />
+  <eLabel name="" position="275,660" size="37,37" cornerRadius="18" backgroundColor="#1aa96b" />
+  <eLabel name="" position="513,660" size="37,37" cornerRadius="18" backgroundColor="#c2941a" />
+  <eLabel name="" position="752,660" size="37,37" cornerRadius="18" backgroundColor="#1f58d6" />
+</screen>
+    ]]>
+  </skin>
+
+
+  <skin id="SubsProLanguageSelection_fhd">
+    <![CDATA[
+<screen position="center,center" size="1720,980" title="Language selection" zPosition="20" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1720,980" backgroundColor="#061425" zPosition="-5" cornerRadius="20" />
+  <eLabel position="20,20" size="1680,940" backgroundColor="#0a1b2d" zPosition="-4" />
+  <eLabel position="30,30" size="1660,68" backgroundColor="#8e5245" zPosition="-3" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="30,108" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="40,40" size="1640,48" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;34" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="title" position="50,130" size="1620,45" valign="center" halign="center" font="Regular;30" transparent="1" foregroundColor="#eaf3ff" />
+  <eLabel name="" position="45,185" size="1630,670" zPosition="-1" backgroundColor="#061425" cornerRadius="20" borderWidth="1" borderColor="#27408b" />
+  <widget source="languages" render="Listbox" position="50,195" size="1620,650" zPosition="3" transparent="1" itemHeight="50" scrollbarMode="showAlways" scrollbarWidth="10" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="12" itemCornerRadiusSelected="12">
+    <convert type="TemplatedMultiContent">
+      {"template": [
+        MultiContentEntryPixmap(pos = (20,5), size = (80,40), png = 2),
+        MultiContentEntryText(pos = (125,0), size = (1085,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, color=0x00EAF3FF),
+        MultiContentEntryText(pos = (1250,0), size = (320,50), font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 0, color=0x0059D8FF)
+      ], "fonts": [gFont("Regular", 28)], "itemHeight": 50}
+    </convert>
+  </widget>
+  <widget name="help_text" position="50,855" size="1620,30" valign="center" halign="center" font="Regular;22" transparent="1" foregroundColor="#d6e4f7" />
+  <eLabel position="30,885" size="1660,2" backgroundColor="#5d37d9" zPosition="-3" />
+  <widget name="key_red" position="104,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <widget name="key_green" position="424,898" size="250,50" valign="center" halign="left" zPosition="2" font="Regular;28" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <eLabel name="" position="50,898" size="50,50" cornerRadius="25" backgroundColor="#a93247" />
+  <eLabel name="" position="370,898" size="50,50" cornerRadius="25" backgroundColor="#1aa96b" />
+  <eLabel name="" position="50,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="370,898" size="52,52" cornerRadius="26" backgroundColor="#999999" zPosition="-1" />
+</screen>
+    ]]>
+  </skin>
+
+  <skin id="SubsProLanguageSelection_hd">
+    <![CDATA[
+<screen position="center,center" size="1280,720" title="Language selection" zPosition="20" flags="wfNoBorder" backgroundColor="#ff000000">
+  <eLabel position="0,0" size="1280,720" backgroundColor="#061425" zPosition="-5" cornerRadius="15" />
+  <eLabel position="15,15" size="1250,691" backgroundColor="#0a1b2d" zPosition="-4" />
+  <eLabel position="22,22" size="1235,50" backgroundColor="#8e5245" zPosition="-3" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <eLabel position="22,79" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <eLabel name="" position="30,29" size="1220,35" zPosition="5" text="SubsSupportPro __SUBSSUPPORTPRO_VERSION__" backgroundColor="#8e5245" font="Regular;25" valign="center" halign="left" foregroundColor="#eaf3ff" />
+  <widget name="title" position="37,96" size="1206,33" valign="center" halign="center" font="Regular;22" transparent="1" foregroundColor="#eaf3ff" />
+  <eLabel name="" position="33,140" size="1213,485" zPosition="-1" backgroundColor="#061425" cornerRadius="15" borderWidth="1" borderColor="#27408b" />
+  <widget source="languages" render="Listbox" position="37,147" size="1206,470" zPosition="3" transparent="1" itemHeight="47" scrollbarMode="showAlways" scrollbarWidth="7" backgroundColorSelected="#2c525b" backgroundColor="#061425" itemCornerRadius="9" itemCornerRadiusSelected="9">
+    <convert type="TemplatedMultiContent">
+      {"template": [
+        MultiContentEntryPixmap(pos = (15,3), size = (80,40), png = 2),
+        MultiContentEntryText(pos = (115,0), size = (785,47), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1, color=0x00EAF3FF),
+        MultiContentEntryText(pos = (920,0), size = (245,47), font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 0, color=0x0059D8FF)
+      ], "fonts": [gFont("Regular", 21)], "itemHeight": 47}
+    </convert>
+  </widget>
+  <widget name="help_text" position="37,623" size="1206,25" valign="center" halign="center" font="Regular;16" transparent="1" foregroundColor="#d6e4f7" />
+  <eLabel position="22,650" size="1235,1" backgroundColor="#5d37d9" zPosition="-3" />
+  <widget name="key_red" position="77,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#a93247" />
+  <widget name="key_green" position="316,660" size="186,37" valign="center" halign="left" zPosition="2" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="#1aa96b" />
+  <eLabel name="" position="37,660" size="37,37" cornerRadius="18" backgroundColor="#a93247" />
+  <eLabel name="" position="275,660" size="37,37" cornerRadius="18" backgroundColor="#1aa96b" />
+  <eLabel name="" position="37,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+  <eLabel name="" position="275,660" size="39,38" cornerRadius="19" backgroundColor="#999999" zPosition="-1" />
+</screen>
+    ]]>
+  </skin>
+
+</subssupportskins>

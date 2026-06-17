@@ -1,0 +1,209 @@
+# -*- coding: utf-8 -*-
+from __future__ import print_function
+import os
+
+import six
+from six.moves import urllib
+
+
+def load(subpath):
+    if subpath.startswith('http'):
+        req = urllib.request.Request(subpath)
+        try:
+            response = urllib.request.urlopen(req)
+            text = response.read()
+        except Exception:
+            raise
+        finally:
+            if 'response' in locals():
+                response.close()
+        return text
+    else:
+        try:
+            with open(subpath, 'rb') as f:
+                return f.read()
+        except Exception:
+            return ""
+
+
+def toString(text):
+    """Return a GUI-safe string on both Python 2 and Python 3.
+
+    Enigma2 list widgets on Python 2 usually expect byte strings, while
+    json.loads() returns unicode. Returning unicode to those widgets can show
+    "<not-a-string>" for release names, provider names and suggestions.
+    """
+    if text is None:
+        return ""
+    if six.PY2:
+        if isinstance(text, six.text_type):
+            return text.encode('utf-8')
+        if isinstance(text, bytearray):
+            return str(text)
+        if isinstance(text, six.binary_type):
+            return text
+        try:
+            return str(text)
+        except Exception:
+            return ""
+    else:
+        if isinstance(text, six.binary_type):
+            return text.decode('utf-8', 'ignore')
+        if isinstance(text, bytearray):
+            return bytes(text).decode('utf-8', 'ignore')
+        if isinstance(text, six.text_type):
+            return text
+        try:
+            return str(text)
+        except Exception:
+            return ""
+
+
+def toUnicode(text):
+    """Return unicode/text safely on both Python 2 and Python 3."""
+    if text is None:
+        return six.text_type("")
+    if six.PY2:
+        if isinstance(text, six.text_type):
+            return text
+        if isinstance(text, six.binary_type):
+            try:
+                return text.decode('utf-8')
+            except Exception:
+                return text.decode('utf-8', 'ignore')
+        try:
+            return six.text_type(text)
+        except Exception:
+            return six.text_type("")
+    else:
+        if isinstance(text, six.binary_type):
+            return text.decode('utf-8', 'ignore')
+        if isinstance(text, bytearray):
+            return bytes(text).decode('utf-8', 'ignore')
+        if isinstance(text, six.text_type):
+            return text
+        try:
+            return six.text_type(text)
+        except Exception:
+            return six.text_type("")
+
+
+def decode(text, encodings, current_encoding=None, decode_from_start=False):
+    utext = None
+    used_encoding = None
+    current_encoding_idx = -1
+    current_idx = 0
+
+    if decode_from_start:
+        current_encoding = None
+
+    if current_encoding is not None:
+        current_encoding_idx = encodings.index(current_encoding)
+        current_idx = current_encoding_idx + 1
+        if current_idx >= len(encodings):
+            current_idx = 0
+
+    while current_idx != current_encoding_idx:
+        enc = encodings[current_idx]
+        try:
+            print('[decode] trying encoding', enc, '...')
+            utext = text.decode(enc)
+            print('[decode] decoded with', enc, 'encoding')
+            used_encoding = enc
+            return utext, used_encoding
+        except Exception:
+            if enc == encodings[-1] and current_encoding_idx == -1:
+                print('[decode] cannot decode with provided encodings')
+                raise Exception("decode error")
+            elif enc == encodings[-1] and current_encoding_idx != -1:
+                current_idx = 0
+                continue
+            else:
+                current_idx += 1
+                continue
+
+
+class HeadRequest(urllib.request.Request):
+    def get_method(self):
+        return "HEAD"
+
+
+def which(program):
+    def is_exe(fpath):
+        return os.path.isfile(fpath) and os.access(fpath, os.X_OK)
+
+    fpath, fname = os.path.split(program)
+    if fpath:
+        if is_exe(program):
+            return program
+    else:
+        for path in os.environ["PATH"].split(os.pathsep):
+            path = path.strip('"')
+            exe_file = os.path.join(path, program)
+            if is_exe(exe_file):
+                return exe_file
+    return None
+
+
+class SimpleLogger(object):
+
+    LOG_FORMAT = "[{0}]{1}"
+    LOG_NONE, LOG_ERROR, LOG_INFO, LOG_DEBUG = list(range(4))
+
+    def __init__(self, prefix_name, log_level=LOG_INFO):
+        self.prefix_name = prefix_name
+        self.log_level = log_level
+
+    def set_log_level(self, level):
+        self.log_level = level
+
+    def error(self, text, *args):
+        if self.log_level >= self.LOG_ERROR:
+            text = self._eval_message(text, args)
+            text = "[error] {0}".format(toString(text))
+            out = self._format_output(text)
+            self._out_fnc(out)
+
+    def info(self, text, *args):
+        if self.log_level >= self.LOG_INFO:
+            text = self._eval_message(text, args)
+            text = "[info] {0}".format(toString(text))
+            out = self._format_output(text)
+            self._out_fnc(out)
+
+    def debug(self, text, *args):
+        if self.log_level == self.LOG_DEBUG:
+            text = self._eval_message(text, args)
+            text = "[debug] {0}".format(toString(text))
+            out = self._format_output(text)
+            self._out_fnc(out)
+
+    def _eval_message(self, text, *args):
+        # error/info/debug pass their *args as one tuple to this helper.
+        # On Python 2, converting that whole tuple with toString() breaks
+        # messages that contain multiple %s placeholders. Convert each item
+        # inside the tuple instead.
+        if len(args) == 1 and isinstance(args[0], tuple):
+            fmt_args = tuple([toString(a) for a in args[0]])
+            if len(fmt_args) == 1:
+                text = text % fmt_args[0]
+            else:
+                text = text % fmt_args
+        elif len(args) >= 1:
+            fmt_args = tuple([toString(a) for a in args])
+            if len(fmt_args) == 1:
+                text = text % fmt_args[0]
+            else:
+                text = text % fmt_args
+        return text
+
+    def _format_output(self, text):
+            return self.LOG_FORMAT.format(self.prefix_name, text)
+
+    def _out_fnc(self, text):
+        print(text)
+        try:
+            import sys
+            sys.stdout.flush()
+        except Exception:
+            pass

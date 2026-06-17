@@ -1,0 +1,52 @@
+<keymap>
+	<map context="SubtitlesActions">
+		<key id="KEY_SUBTITLE" mapto="subtitles" flags="m" />
+		<key id="KEY_TEXT" mapto="subtitles" flags="m" />
+		<key id="KEY_RADIO" mapto="subtitles" flags="m" />
+		<key id="KEY_TV" mapto="subtitlesStatus" flags="m" />
+		<key id="KEY_RECORD" mapto="subtitlesStatus" flags="m" />
+	</map>
+	<map context="InfoActions">
+		<key id="KEY_INFO" mapto="info" flags="m" />
+	</map>
+	<map context="OkActions">
+		<key id="KEY_OK" mapto="okbutton" flags="m" />
+	</map>
+	<map context="SubtitlesDVBActions">
+		<key id="KEY_LEFT" mapto="prevSub" flags="m" />
+		<key id="KEY_RIGHT" mapto="nextSub" flags="m" />
+		<key id="KEY_UP" mapto="restartSub" flags="m" />
+		<key id="KEY_DOWN" mapto="restartSub" flags="m" />
+		<key id="KEY_PREVIOUS" mapto="prevSubMinute" flags="b" />
+		<key id="KEY_PREVIOUS" mapto="prevSubManual" flags="l" />
+		<key id="KEY_REWIND" mapto="prevSubMinute" flags="b"/>
+		<key id="KEY_REWIND" mapto="prevSubManual" flags="l" />
+		<key id="KEY_FASTFORWARD" mapto="nextSubMinute" flags="b"/>
+		<key id="KEY_NEXT" mapto="nextSubMinute" flags="b" />
+		<key id="KEY_NEXT" mapto="nextSubManual" flags="l" />
+		<key id="KEY_PAUSE" mapto="pauseSub" flags="m" />
+		<key id="KEY_PLAY" mapto="resumeSub" flags="m"/>
+		<key id="KEY_PLAYPAUSE" mapto="playPauseSub" flags="m"/>
+		<key id="KEY_RED" mapto="openSubtitleProPicker" flags="m"/> 
+		<!--key id="KEY_GREEN" mapto="translateNow" flags="m" /-->
+		<key id="KEY_YELLOW" mapto="eventSync" flags="m" />
+		<key id="KEY_BLUE" mapto="changeFps" flags="m" />
+		<key id="KEY_OK" mapto="showHideStatus" flags="m"/>
+		<key id="KEY_EXIT" mapto="confirmClose" flags="m"/>
+		<key id="KEY_ESC" mapto="confirmClose" flags="m"/>
+		<!--key id="KEY_CHANNELUP" mapto="channelPlusPressed" flags="mr" />
+		<key id="KEY_CHANNELDOWN" mapto="channelMinusPressed" flags="mr" /-->
+		<key id="KEY_5" mapto="applySavedDelay" flags="m" />
+		<key id="KEY_6" mapto="saveCurrentDelay" flags="m" />
+		<key id="KEY_INFO" mapto="showHelp" flags="m" />
+		<key id="KEY_MENU" mapto="externalStyle" flags="m" />
+	</map>
+		<map context="NumberActions">
+		<key id="KEY_5" mapto="importsettings" flags="m" />
+		<key id="KEY_6" mapto="exportsettings" flags="m" />
+	</map>
+	<map context="SubtitlePickerActions">
+		<key id="KEY_CHANNELUP" mapto="firstSubtitle" flags="m" />
+		<key id="KEY_CHANNELDOWN" mapto="lastSubtitle" flags="m" />
+	</map>
+</keymap>
