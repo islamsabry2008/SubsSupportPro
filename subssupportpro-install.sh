@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # ============================================================
-# SubsSupportPro Installer v1.0.2
+# SubsSupportPro Installer v1.1.0
 # Supports DreamOS + OpenATV/OpenPLi style images
 # Adds dependency check/install before plugin extraction
 # ============================================================
