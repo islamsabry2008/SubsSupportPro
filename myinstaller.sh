@@ -10,12 +10,13 @@ REPO="SubsSupportPro"
 
 # 1. PYTHON DEPENDENCIES (Write only the core module names without prefixes)
 # The script automatically adds 'python-' for Py2 or 'python3-' for Py3.
-# Leave empty "" if the plugin doesn't need any Python dependencies.
-PY_DEPENDS="requests beautifulsoup4 codecs compression core difflib json six twisted-web xmlrpc"
+# OpenSource uses twisted-web, DreamOS uses twisted.
+PY3_DEPENDS="requests beautifulsoup4 codecs compression core difflib json six twisted-web xmlrpc"
+PY2_DEPENDS="requests beautifulsoup4 codecs compression core difflib json six twisted xmlrpc"
 
 # 2. SYSTEM DEPENDENCIES (Binary utilities installed exactly as written, e.g., unrar)
-# Leave empty "" if none are needed.
-SYS_DEPENDS="unrar"
+# Added ffmpeg to ensure the audio tempo features work smoothly.
+SYS_DEPENDS="unrar ffmpeg"
 # =========================================================================
 
 # Dynamically construct the download link
@@ -87,9 +88,17 @@ fi
 log "[INFO] Detected Python Environment: Python $PYTHON_VERSION"
 
 # 2. Build the Final Dependency List based on Python version
-for dep in $PY_DEPENDS; do
+ACTIVE_PY_DEPENDS=""
+if [ "$PYTHON_VERSION" = "3" ]; then
+    ACTIVE_PY_DEPENDS="$PY3_DEPENDS"
+elif [ "$PYTHON_VERSION" = "2" ]; then
+    ACTIVE_PY_DEPENDS="$PY2_DEPENDS"
+fi
+
+for dep in $ACTIVE_PY_DEPENDS; do
     FINAL_DEPENDS="$FINAL_DEPENDS ${PY_PREFIX}${dep}"
 done
+
 for dep in $SYS_DEPENDS; do
     FINAL_DEPENDS="$FINAL_DEPENDS $dep"
 done
