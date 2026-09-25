@@ -54,7 +54,7 @@ is_pkg_installed() {
 restart_enigma2() {
     log "[INFO] Restarting Enigma2 UI..."
     sleep 2
-    if [ -f /usr/bin/systemctl ]; then
+    if has_cmd systemctl; then
         systemctl restart enigma2
     else
         init 4 && sleep 2 && init 3 || killall -9 enigma2 >/dev/null 2>&1
