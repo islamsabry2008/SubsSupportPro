@@ -101,7 +101,7 @@ else
 fi
 
 PY3_DEPENDS="requests beautifulsoup4 codecs compression core difflib json six $TWISTED_MOD xmlrpc"
-PY2_DEPENDS="requests beautifulsoup4 codecs compression core difflib json six twisted xmlrpc"
+PY2_DEPENDS="beautifulsoup4 codecs compression core difflib json six twisted xmlrpc"
 
 ACTIVE_PY_DEPENDS=""
 if [ "$PYTHON_VERSION" = "3" ]; then
