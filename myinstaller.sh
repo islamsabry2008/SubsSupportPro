@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# wget -qO - https://raw.githubusercontent.com/popking159/SubsSupportPro/refs/heads/main/myinstaller.sh | /bin/sh
+
 # =========================================================================
 # CONFIGURATION (Change these for different repositories)
 # =========================================================================
