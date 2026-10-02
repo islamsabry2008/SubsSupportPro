@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# wget -qO - https://raw.githubusercontent.com/popking159/SubsSupportPro/refs/heads/main/myinstaller.sh | /bin/sh
 # =========================================================================
 # CONFIGURATION (Change these for different repositories)
 # =========================================================================
@@ -12,8 +11,8 @@ REPO="SubsSupportPro"
 SYS_DEPENDS="unrar ffmpeg"
 # =========================================================================
 
-# Dynamically construct the download link
-PLUGIN_URL="https://github.com/${USERNAME}/${REPO}/raw/refs/heads/main/main.tar.gz"
+# Dynamically construct the download link DIRECTLY to the raw file to avoid Busybox wget redirect failures
+PLUGIN_URL="https://raw.githubusercontent.com/${USERNAME}/${REPO}/main/main.tar.gz"
 
 # Workspace paths
 TMP_DIR="/var/volatile/tmp"
@@ -93,7 +92,6 @@ fi
 log "[INFO] Detected Python Environment: Python $PYTHON_VERSION ($PY_PREFIX)"
 
 # 3. Build the Final Dependency List based on Package Manager & Python Version
-# DreamOS (apt) uses 'twisted', OE-Alliance (opkg) uses 'twisted-web'
 if [ "$PKG_MANAGER" = "apt" ]; then
     TWISTED_MOD="twisted"
 else
@@ -101,7 +99,8 @@ else
 fi
 
 PY3_DEPENDS="requests beautifulsoup4 codecs compression core difflib json six $TWISTED_MOD xmlrpc"
-PY2_DEPENDS="beautifulsoup4 codecs compression core difflib json six twisted xmlrpc"
+# Re-added 'requests' to ensure it installs on DreamOS
+PY2_DEPENDS="requests beautifulsoup4 codecs compression core difflib json six twisted xmlrpc"
 
 ACTIVE_PY_DEPENDS=""
 if [ "$PYTHON_VERSION" = "3" ]; then
@@ -118,7 +117,7 @@ for dep in $SYS_DEPENDS; do
     FINAL_DEPENDS="$FINAL_DEPENDS $dep"
 done
 
-# 4. Update Package Feeds (Only if dependencies are requested)
+# 4. Update Package Feeds
 if [ -n "$FINAL_DEPENDS" ] && [ -n "$PKG_MANAGER" ]; then
     if [ "$PKG_MANAGER" = "apt" ]; then
         log "[INFO] Updating apt feeds..."
@@ -129,7 +128,7 @@ if [ -n "$FINAL_DEPENDS" ] && [ -n "$PKG_MANAGER" ]; then
     fi
 fi
 
-# 5. Check and Download Dependencies (Strict Mode)
+# 5. Check and Download Dependencies
 if [ -n "$FINAL_DEPENDS" ]; then
     log "[INFO] Verifying required dependencies..."
     for pkg in $FINAL_DEPENDS; do
@@ -143,7 +142,6 @@ if [ -n "$FINAL_DEPENDS" ]; then
                 opkg install "$pkg" >/dev/null 2>&1
             fi
             
-            # Strict Verification: If it failed to install, abort immediately
             if is_pkg_installed "$pkg"; then
                 log "[OK] Successfully installed: $pkg"
             else
@@ -161,15 +159,17 @@ log "[INFO] Downloading main plugin tree archive..."
 rm -f "$TMP_FILE"
 wget -q --no-check-certificate "$PLUGIN_URL" -O "$TMP_FILE"
 
-if [ ! -s "$TMP_FILE" ]; then
-    log "[ERROR] Download failed or file is empty!"
+# Make sure the file actually exists and is larger than a standard HTML error page
+if [ ! -s "$TMP_FILE" ] || [ $(stat -c%s "$TMP_FILE") -lt 1000 ]; then
+    log "[ERROR] Download failed or file is not a valid archive!"
     rm -f "$TMP_FILE"
     exit 1
 fi
 
 # 7. Extract directly to ROOT (/)
 log "[INFO] Extracting payload contents to system paths..."
-tar -xzf "$TMP_FILE" -C /
+# Using -xf instead of -xzf to let Busybox auto-detect compression, avoiding strict gzip errors
+tar -xf "$TMP_FILE" -C /
 if [ $? -ne 0 ]; then
     log "[ERROR] Extraction failed!"
     rm -f "$TMP_FILE"
