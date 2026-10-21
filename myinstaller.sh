@@ -13,6 +13,13 @@ REPO="SubsSupportPro"
 SYS_DEPENDS="unrar ffmpeg"
 # =========================================================================
 
+# Terminal Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
+
 # Dynamically construct the download link DIRECTLY to the raw file to avoid Busybox wget redirect failures
 PLUGIN_URL="https://raw.githubusercontent.com/${USERNAME}/${REPO}/main/main.tar.gz"
 
@@ -26,7 +33,14 @@ PYTHON_VERSION=""
 FINAL_DEPENDS=""
 
 log() {
-    echo "$1"
+    # Automatically colorize based on the log tag
+    case "$1" in
+        *\[INFO\]*) echo -e "${CYAN}$1${NC}" ;;
+        *\[OK\]*) echo -e "${GREEN}$1${NC}" ;;
+        *\[WARN\]*) echo -e "${YELLOW}$1${NC}" ;;
+        *\[ERROR\]*) echo -e "${RED}$1${NC}" ;;
+        *) echo -e "$1" ;;
+    esac
 }
 
 has_cmd() {
@@ -52,19 +66,9 @@ is_pkg_installed() {
     return 1
 }
 
-restart_enigma2() {
-    log "[INFO] Restarting Enigma2 UI..."
-    sleep 2
-    if has_cmd systemctl; then
-        systemctl restart enigma2
-    else
-        init 4 && sleep 2 && init 3 || killall -9 enigma2 >/dev/null 2>&1
-    fi
-}
-
-echo "===================================================="
-echo "         $PLUGIN_NAME INSTALLER UTILITY            "
-echo "===================================================="
+echo -e "${GREEN}====================================================${NC}"
+echo -e "${GREEN}         $PLUGIN_NAME INSTALLER UTILITY             ${NC}"
+echo -e "${GREEN}====================================================${NC}"
 
 # 1. Detect Package Manager
 # STRICT CHECK: We must check apt-get FIRST because some DreamOS 
@@ -119,18 +123,7 @@ for dep in $SYS_DEPENDS; do
     FINAL_DEPENDS="$FINAL_DEPENDS $dep"
 done
 
-# 4. Update Package Feeds
-if [ -n "$FINAL_DEPENDS" ] && [ -n "$PKG_MANAGER" ]; then
-    if [ "$PKG_MANAGER" = "apt" ]; then
-        log "[INFO] Updating apt feeds..."
-        apt-get update >/dev/null 2>&1 || log "[WARN] apt update failed, continuing..."
-    elif [ "$PKG_MANAGER" = "opkg" ]; then
-        log "[INFO] Updating opkg feeds..."
-        opkg update >/dev/null 2>&1 || log "[WARN] opkg update failed, continuing..."
-    fi
-fi
-
-# 5. Check and Download Dependencies
+# 4. Check and Download Dependencies
 if [ -n "$FINAL_DEPENDS" ]; then
     log "[INFO] Verifying required dependencies..."
     for pkg in $FINAL_DEPENDS; do
@@ -156,7 +149,7 @@ else
     log "[INFO] No dependencies specified in configuration. Skipping dependency phase."
 fi
 
-# 6. Download Plugin Archive
+# 5. Download Plugin Archive
 log "[INFO] Downloading main plugin tree archive..."
 rm -f "$TMP_FILE"
 wget -q --no-check-certificate "$PLUGIN_URL" -O "$TMP_FILE"
@@ -168,7 +161,7 @@ if [ ! -s "$TMP_FILE" ] || [ $(stat -c%s "$TMP_FILE") -lt 1000 ]; then
     exit 1
 fi
 
-# 7. Extract directly to ROOT (/)
+# 6. Extract directly to ROOT (/)
 log "[INFO] Extracting payload contents to system paths..."
 # Using -xf instead of -xzf to let Busybox auto-detect compression, avoiding strict gzip errors
 tar -xf "$TMP_FILE" -C /
@@ -181,9 +174,8 @@ fi
 rm -f "$TMP_FILE"
 sync
 
-echo "===================================================="
-echo "          $PLUGIN_NAME INSTALLATION COMPLETE        "
-echo "===================================================="
+echo -e "${GREEN}====================================================${NC}"
+echo -e "${GREEN}          $PLUGIN_NAME INSTALLATION COMPLETE        ${NC}"
+echo -e "${GREEN}====================================================${NC}"
 
-restart_enigma2
 exit 0
