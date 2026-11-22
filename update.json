@@ -1,5 +1,5 @@
 {
-    "version": "1.8.0",
-    "changelog": "- new version.\n- add new SrtEditor as a separate srt editor tool.",
+    "version": "1.9.0",
+    "changelog": "- new version.\n- fix Albanian , Croatian and Serbian languages.",
     "script_url": "https://raw.githubusercontent.com/popking159/SubsSupportPro/main/myinstaller.sh"
 }
