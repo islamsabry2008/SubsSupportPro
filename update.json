@@ -1,5 +1,5 @@
 {
-    "version": "1.9.0",
-    "changelog": "- new version.\n- fix Albanian , Croatian and Serbian languages.",
+    "version": "2.0.0",
+    "changelog": "- new version.\n- fix Albanian , Croatian and Serbian languages. \n- fix dreamos crash on checking online update.",
     "script_url": "https://raw.githubusercontent.com/popking159/SubsSupportPro/main/myinstaller.sh"
 }
